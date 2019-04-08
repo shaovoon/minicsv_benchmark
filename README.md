@@ -92,3 +92,5 @@ csv_parser timing:147ms
 MiniCSV timing:175ms
 CSV Stream timing:434ms
 ```
+
+Note: Benchmark could be different with other C++ compiler like G++ and Clang++ which I do not have access now.
