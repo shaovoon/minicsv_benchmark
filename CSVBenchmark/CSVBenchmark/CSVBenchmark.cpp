@@ -1,15 +1,41 @@
-# minicsv_benchmark
-[SSO effects] MiniCSV wins string_view CSV Parser in benchmark
+// CSVBenchmark.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
 
-[string_view CSV Parser](https://github.com/vincentlaucsb/csv-parser)
-[MiniCSV](https://github.com/shaovoon/minicsv) is implemented with STL File streams
-[CSVStream](https://github.com/shaovoon/csv_stream) is reimplementation of MiniCSV with C File API
+#include <iostream>
+#include <iomanip>
+#include <chrono>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <cstdio>
+#include "include/csv.hpp"
+#include "minicsv.h"
+#include "csv_stream.h"
 
-## Benchmark code
+using namespace csv;
 
-There is a CSV Generator project in the repo.
+class timer
+{
+public:
+	timer() = default;
+	void start(const std::string& text_)
+	{
+		text = text_;
+		begin = std::chrono::high_resolution_clock::now();
+	}
+	void stop()
+	{
+		auto end = std::chrono::high_resolution_clock::now();
+		auto dur = end - begin;
+		auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(dur).count();
+		printf("%s timing:%dms\n", text.c_str(), ms);
+	}
 
-```Cpp
+private:
+	std::string text;
+	std::chrono::high_resolution_clock::time_point begin;
+};
+
 int main()
 {
 	timer stopwatch;
@@ -67,27 +93,6 @@ int main()
 		}
 		stopwatch.stop();
 	}
+	return 0;
 }
-```
 
-I only benchmark in VC++ 2017.
-
-## Benchmark of every column is 12 chars in length
-
-The length is within Short String Buffer(SSO) limit to avoid heap allocation
-
-```
-csv_parser timing:113ms
-MiniCSV timing:71ms
-CSV Stream timing:187ms
-```
-
-## Benchmark of every column is 30 chars in length
-
-The length is outside Short String Buffer(SSO) limit! Now string_view csv_parser wins.
-
-```
-csv_parser timing:147ms
-MiniCSV timing:175ms
-CSV Stream timing:434ms
-```

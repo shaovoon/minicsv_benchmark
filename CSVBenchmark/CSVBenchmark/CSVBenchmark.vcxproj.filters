@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{eb49919f-dbb0-4841-bf8f-3e81a41c6898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\internal">
+      <UniqueIdentifier>{b1b60b0c-ca6b-4d8a-beee-394dc9e8bb00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\external">
+      <UniqueIdentifier>{b12e1c84-791a-414b-8999-689f60383c27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\csv.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\compatibility.hpp">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\constants.hpp">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\csv_format.hpp">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\csv_reader.hpp">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\csv_row.hpp">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\csv_stat.hpp">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\csv_utility.hpp">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\csv_writer.hpp">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\data_type.h">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\internal\giant_string_buffer.hpp">
+      <Filter>include\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\external\string_view.hpp">
+      <Filter>include\external</Filter>
+    </ClInclude>
+    <ClInclude Include="csv_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="minicsv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSVBenchmark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\internal\csv_reader.cpp">
+      <Filter>include\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="include\internal\csv_reader_iterator.cpp">
+      <Filter>include\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="include\internal\csv_row.cpp">
+      <Filter>include\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="include\internal\csv_stat.cpp">
+      <Filter>include\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="include\internal\csv_utility.cpp">
+      <Filter>include\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="include\internal\data_type.cpp">
+      <Filter>include\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="include\internal\giant_string_buffer.cpp">
+      <Filter>include\internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
