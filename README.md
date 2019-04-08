@@ -3,7 +3,7 @@
 
 ## CSV Library used
 
-The 1st CSV library is written by Vincent La while the other 2 is by me.
+The 1st CSV library is written by Vincent La while the other 2 are by me.
 
 * [string_view CSV Parser](https://github.com/vincentlaucsb/csv-parser) by Vincent La
 * [MiniCSV](https://github.com/shaovoon/minicsv) is implemented with STL File streams
