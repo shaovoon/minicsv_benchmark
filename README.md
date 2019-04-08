@@ -6,7 +6,7 @@ The 1st CSV parser is written by Vincent La while the other 2 parsers (which als
 
 * [string_view CSV Parser](https://github.com/vincentlaucsb/csv-parser) by Vincent La
 * [MiniCSV](https://github.com/shaovoon/minicsv) is implemented with STL File streams
-* [CSVStream](https://github.com/shaovoon/csv_stream) is reimplementation of MiniCSV with C File API to avoid code bloat in asm.js
+* [CSVStream](https://github.com/shaovoon/csv_stream) is a reimplementation of MiniCSV with C File API to avoid code bloat in asm.js
 
 ## Benchmark code
 
