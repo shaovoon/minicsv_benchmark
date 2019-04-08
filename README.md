@@ -84,7 +84,7 @@ CSV Stream timing:187ms
 
 ## Benchmark of every column is 30 chars in length
 
-The length is outside Short String Buffer(SSO) limit! Now string_view csv_parser wins.
+The length is outside SSO limit, memory has to allocated on the heap! Now string_view csv_parser wins.
 
 ```
 csv_parser timing:147ms
