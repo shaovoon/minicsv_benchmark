@@ -1,5 +1,4 @@
-# minicsv_benchmark
-[SSO effects] MiniCSV wins string_view CSV Parser in benchmark
+# [SSO effects] MiniCSV wins string_view CSV Parser in benchmark
 
 ## CSV Library used
 
