@@ -1,6 +1,6 @@
 # [SSO effects] MiniCSV wins string_view CSV Parser in benchmark
 
-## CSV Library used
+## CSV Libraries used
 
 The 1st CSV parser is written by Vincent La while the other 2 parsers (which also include writer) are written by me.
 
