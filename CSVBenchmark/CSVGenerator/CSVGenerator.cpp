@@ -12,7 +12,7 @@ int main()
 {
 	const int TOTAL_LINES = 20000;
 	const int TOTAL_COL = 20;
-	const int TOTAL_COL_LENGTH = 30;
+	const int TOTAL_COL_LENGTH = 12;
 	srand(time(0));
 
 	std::string text = "";
