@@ -97,6 +97,24 @@ int main()
 	}
 	stopwatch.stop();
 
+	str = "";
+	stopwatch.start("CSV Cached Stream");
+	for (int a = 0; a < MAX_LOOP; ++a)
+	{
+		capi::csv::icachedfstream is(csv_file.c_str());
+		is.enable_trim_quote_on_str(false, '\"');
+		is.set_delimiter(',', "$$");
+		while (is.read_line())
+		{
+			size_t total = is.num_of_delimiter() + 1;
+			for (size_t i = 0; i < total; ++i)
+				is >> str;
+		}
+		//std::cout << str << std::endl;
+	}
+	stopwatch.stop();
+
+
 	return 0;
 }
 
